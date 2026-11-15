@@ -131,7 +131,7 @@ footer a{margin-right:16px}
       <img src="img/klavier-finale.jpg" alt="">
       <h3>Kombi-Paket</h3>
       <div class="kind">Kurs 1 + Kurs 2 + Bonus</div>
-      <div class="price">39,90 € <small>einmalig</small></div>
+      <div class="price">29,90 € <small>einmalig</small></div>
       <ul class="check">
         <li>Beide Kurse komplett</li>
         <li>Grundlagen einmal, sauber zusammengeführt</li>
@@ -181,7 +181,7 @@ footer a{margin-right:16px}
 <script>
 // Kauf-Links hier eintragen (z. B. Digistore24-Bestellseiten). Solange leer: Bestellung per E-Mail.
 const CHECKOUT = { kurs1: "", kurs2: "", kombi: "" };
-const NAMES = { kurs1: "Kurs 1: Wenn-Reels (19,90 €)", kurs2: "Kurs 2: Bau-Reels (19,90 €)", kombi: "Kombi-Paket (39,90 €)" };
+const NAMES = { kurs1: "Kurs 1: Wenn-Reels (19,90 €)", kurs2: "Kurs 2: Bau-Reels (19,90 €)", kombi: "Kombi-Paket (29,90 €)" };
 document.querySelectorAll("[data-product]").forEach((a) => {
   const p = a.dataset.product;
   a.href = CHECKOUT[p] || `mailto:furkankili95@gmail.com?subject=${encodeURIComponent("Bestellung " + NAMES[p])}`;
